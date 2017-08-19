@@ -189,7 +189,22 @@
   > ~$: tar -tf (view the content of the package)
   >
 
-  ####
+  ####ffmpeg
+  1.add subtitle to a movie
+  > ~$: ffmpeg -i filename.ssa[srt.etc.] filename.ass #transform subtitle files into ass format  
+  > ~$: ffmpeg -i videofilename -vf "ass=subtitle.ass" output
+
+  2.transform mp3 to flac
+  > bash shell code :  
+    #/bin/sh  
+  for f in *.mp3  
+  do  
+  ffmpeg -i $f  ${f%%.*}.flac  
+  done  
+
+  3.record Desktop shell
+  >   ffmpeg -f x11grab -s 1360x768 -r 60 -i $DISPLAY    -c:v h264  -s 1360x768 a.mp4
+
 
 
   #### others
@@ -205,3 +220,15 @@
   > ~$: curl -f 'name=@filename' http://img.vim-cn.com/    <br>#upload an image file(or anyother files) to http://img.vim-cn.com
   > ~$: curl -v --data-urlencode 'content@/home/beval/Desktop/filename' -d 'poster=beval' 'syntax=text' http://paste.ubuntu.com/  
 > ~$: curl https://api.streamable.com/upload/ -u username:password -F 'name=@filename'
+
+4.system infomation
+> ~$:head -n 1 /etc/issue  #veiw system os info  
+> ~$:uname -a  # view core/operat system/CPU info  
+> ~$:cat /proc/cpuinfo  # view CPU info  
+> ~$:hostname  # view hostname  
+> ~$:lspci -tv # list all pci devices  
+> ~$:lsusb -tv # list all usb devices
+> ~$:lsmod # list all loaded core module
+> ~$:free -m # view the free memory  
+> ~$:df -h #view the info of each partition
+> ~$:du -sh filename # view the size of the file
