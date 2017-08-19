@@ -221,7 +221,7 @@
   > ~$: curl -v --data-urlencode 'content@/home/beval/Desktop/filename' -d 'poster=beval' 'syntax=text' http://paste.ubuntu.com/  
 > ~$: curl https://api.streamable.com/upload/ -u username:password -F 'name=@filename'
 
-4.system infomation
+4. system infomation
 > ~$:head -n 1 /etc/issue  #veiw system os info  
 > ~$:uname -a  # view core/operat system/CPU info  
 > ~$:cat /proc/cpuinfo  # view CPU info  
@@ -232,3 +232,9 @@
 > ~$:free -m # view the free memory  
 > ~$:df -h #view the info of each partition
 > ~$:du -sh filename # view the size of the file
+
+5. commend history
+> ~$:sudo !! # execute the last command use root authority   
+> ~$:$!! # execute the last command
+
+> ctrl+r # shortcut for command fuzzy match
