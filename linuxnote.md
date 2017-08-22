@@ -1,6 +1,6 @@
 
   ## <center>Linux notes</center>
-  #### archlinux fcitx
+  #### archlinux tips
   1. ~$:# fcitx
      export GTK_IM_MODULE=fcitx
      export QT_IM_MODULE=fcitx
@@ -11,6 +11,11 @@
   export GTK_IM_MODULE=fcitx
   export QT_IM_MODULE=fcitx
   export XMODIFIERS=“@im=fcitx”
+
+3. find the fastest mirror
+> ~$:sudo pacman-mirrors -gb testing -c China  #chose region  
+> ~$:sudo pacman -Syyu  #update
+
   #### ubuntu tips
   1. auto find the best mirror base on your location (deb mirror)
   just add the code below to the top of your /etc/apt/sources
@@ -238,3 +243,4 @@
 > ~$:$!! # execute the last command
 
 > ctrl+r # shortcut for command fuzzy match
+ 
