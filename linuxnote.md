@@ -24,38 +24,41 @@
   deb mirror://mirrors.ubuntu.com/mirrors.txt precise main restricted universe multiverse
   deb mirror://mirrors.ubuntu.com/mirrors.txt precise-updates main restricted universe multiverse
   deb mirror://mirrors.ubuntu.com/mirrors.txt precise-backports main restricted universe multiverse
-  deb mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse
+  deb mirror://mirrors.ubuntu.com/mirrors.txt precise-security main restricted universe multiverse  
+
   2. locale
-  > ~$: vim /etc/defalut/locale
-  > ~$: locale-gen
-  > ~$: locale -a
-  > ~$: locale
-  > ~$: sudo /usr/share/locales/install-language-pack en_US
-  #### enviromental variables
-  1. declare (create a  variables )
-  > ~$: declare { variables }
-  2. set (show all  variables  of current shell)
-  > ~$: set
-  2. env(show  variables  related to current user)
-  > ~$: env
-  3. export (export  variables )
-  > ~$: export
-  4. location to save variables to make them permanent
-   /etc/bashrc   
-   /etc/profile
-   5. **☆**path
-   > ~$: echo $path
-   > ~$: PATH=$PATH:/home/shiyanlou/mybin (add path)
-   > ~$: echo "PATH=$PATH:/home/shiyanlou/mybin" >> .bashrc
-  #### search
-  1. whereis
-  2. locate
+  > ~$: vim /etc/defalut/locale  
+  > ~$: locale-gen  
+  > ~$: locale -a  
+  > ~$: locale  
+  > ~$: sudo /usr/share/locales/install-language-pack en_US  
+
+  #### enviromental variables  
+
+  1. declare (create a  variables )  
+  > ~$: declare { variables }  
+  2. set (show all  variables  of current shell)  
+  > ~$: set  
+  2. env(show  variables  related to current user)  
+  > ~$: env  
+  3. export (export  variables )  
+  > ~$: export  
+  4. location to save variables to make them permanent  
+   /etc/bashrc    
+   /etc/profile  
+   5. **☆**path  
+   > ~$: echo $path  
+   > ~$: PATH=$PATH:/home/shiyanlou/mybin (add path)  
+   > ~$: echo "PATH=$PATH:/home/shiyanlou/mybin" >> .bashrc  
+  #### search  
+  1. whereis  
+  2. locate  
   > ~$: locate /etc/sh (find all file or floder start with sh in /etc)
-  locate /usr/share/\\*.jpg (find all jpg file in /usr/share)
-  3. which
-  4. find
-  ![](http://i4.buimg.com/567571/133fc05ae2dea9a5.png)
-  ![](https://dn-anything-about-doc.qbox.me/linux_base/5-8.png)
+  locate /usr/share/\\*.jpg (find all jpg file in /usr/share)  
+  3. which  
+  4. find  
+  ![](http://i4.buimg.com/567571/133fc05ae2dea9a5.png)  
+  ![](https://dn-anything-about-doc.qbox.me/linux_base/5-8.png)  
 
 
   #### system management
@@ -243,4 +246,3 @@
 > ~$:$!! # execute the last command
 
 > ctrl+r # shortcut for command fuzzy match
- 
