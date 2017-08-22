@@ -197,3 +197,31 @@ print(players[-3:])
 
 7. 遍历切片
 > 使用for循环
+
+8. 复制列表
+> a=b[:] 此时a复制了b中的元素，a，b改动相互独立 ；若a=b，则a随b改动
+
+9. 元组
+> 与列表相近，但是不可更改，格式为a(1,2,3)；更改方式为重新定义a=(,)
+
+##四 if语句
+###基本格式
+1. if语句基本格式
+```
+if condition :
+    do
+else:
+    do
+```
+2. “与”、“或”
+  and
+  or  
+3. 检查特定值是否包含在列表中  
+'char' in a
+'char' not in a
+
+4. 布尔表达式
+```
+variate=Ture
+variate=False
+```
