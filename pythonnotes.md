@@ -213,15 +213,54 @@ if condition :
 else:
     do
 ```
-2. “与”、“或”
+2. if-elif-else句式
+```
+if condition:
+  do something
+elif condition:
+  do something
+else:
+  do something
+```
+3. else
+> else 是当if 和 elif 条件均不满足的所有情况都执行，所以不建议使用，最好使用一条elif进行清晰说明
+
+### 条件测试
+1. “与”、“或”
   and
   or  
-3. 检查特定值是否包含在列表中  
+2. 检查特定值是否包含在列表中  
 'char' in a
 'char' not in a
 
-4. 布尔表达式
+3. 布尔表达式
 ```
 variate=Ture
 variate=False
+```
+
+###用if语句处理列表
+1. 检查特殊元素
+> for 循环中加入if语句
+
+2. 确定列表不是空的
+> 。在if语句中将列表名用在条件表达式中时,Python将在列表
+至少包含一个元素时返回True,并在列表为空时返回False。
+
+3. 多个列表
+> for a in 列表 1：
+    if a in 列表2：
+      do something
+    if a not in 列表2：
+      do something
+## 六、字典  
+### 字典的概念
+1. 基本格式
+ > 在Python中,字典是一系列键—值对。每个键都与一个值相关联,你可以使用键来访问与之
+相关联的值。与键相关联的值可以是数字、字符串、列表乃至字典。事实上,可将任何Python对
+象用作字典中的值。  
+
+  如下：
+```
+alien_0 = {'color': 'green', 'points': 5}
 ```
