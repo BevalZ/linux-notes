@@ -168,7 +168,9 @@
   > ~$: fbi filename  #view image file in tty
   5. fbgrab (grab image)
   > ~$: fbgrab -h ... -w ... -s ... -f ...
-  -f filename -h height -w width -s second
+  -f filename -h height -w width -s second  
+  6.
+
   ####the internet
   1. irssi
   >
@@ -245,4 +247,12 @@
 > ~$:sudo !! # execute the last command use root authority   
 > ~$:$!! # execute the last command
 
-> ctrl+r # shortcut for command fuzzy match
+> ctrl+r # shortcut for command fuzzy match  
+
+6. github  create a new repository on the command line
+> ~$: echo "# self-learning" >> README.md  
+> ~$: git init  
+> ~$: git add README.md  
+> ~$: git commit -m "first commit"  
+> ~$: git remote add origin https://github.com/BevalZ/self-learning.git  
+> ~$: git push -u origin master  
